@@ -1,0 +1,49 @@
+{
+  "name": "legacy-paths",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "db:generate": "prisma generate",
+    "db:push": "prisma db push",
+    "db:migrate": "prisma migrate dev",
+    "db:seed": "tsx prisma/seed.ts"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "next": "^14.2.18",
+    "@prisma/client": "^6.2.0",
+    "next-auth": "^4.24.11",
+    "@auth/prisma-adapter": "^1.6.0",
+    "stripe": "^17.5.0",
+    "@stripe/stripe-js": "^4.10.0",
+    "resend": "^4.0.1",
+    "react-hook-form": "^7.54.2",
+    "zod": "^3.24.1",
+    "@hookform/resolvers": "^3.9.1",
+    "@tanstack/react-query": "^5.62.13",
+    "framer-motion": "^11.15.0",
+    "date-fns": "^4.1.0",
+    "clsx": "^2.1.1",
+    "tailwind-merge": "^2.5.5",
+    "class-variance-authority": "^0.7.1",
+    "lucide-react": "^0.469.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.2",
+    "@types/node": "^22.10.5",
+    "@types/react": "^18.3.18",
+    "@types/react-dom": "^18.3.5",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.17",
+    "eslint": "^8.57.1",
+    "eslint-config-next": "^14.2.18",
+    "prisma": "^6.2.0",
+    "tsx": "^4.19.2",
+    "tailwindcss-animate": "^1.0.7"
+  }
+}
