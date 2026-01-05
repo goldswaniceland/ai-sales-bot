@@ -1,0 +1,31 @@
+{
+  "buildCommand": "prisma generate && next build",
+  "framework": "nextjs",
+  "installCommand": "npm install",
+  "env": {
+    "DATABASE_URL": {
+      "description": "PostgreSQL database connection string",
+      "required": true
+    },
+    "NEXTAUTH_SECRET": {
+      "description": "Secret for NextAuth.js (generate with: openssl rand -base64 32)",
+      "required": true
+    },
+    "NEXTAUTH_URL": {
+      "description": "Production URL (e.g., https://legacypaths.guide)",
+      "required": true
+    },
+    "STRIPE_SECRET_KEY": {
+      "description": "Stripe secret key (use live key for production)",
+      "required": true
+    },
+    "STRIPE_WEBHOOK_SECRET": {
+      "description": "Stripe webhook signing secret",
+      "required": true
+    },
+    "RESEND_API_KEY": {
+      "description": "Resend API key for sending emails",
+      "required": false
+    }
+  }
+}
