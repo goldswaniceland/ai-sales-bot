@@ -33,7 +33,7 @@ model JourneyTemplate {
   duration        Int              // days
   basePrice       Int              // cents (USD)
   description     String?
-  highlights      String[]         // array of strings
+  highlights      String           // JSON array of strings
   status          String           @default("published") // published, draft
   createdAt       DateTime         @default(now())
   itineraryDays   ItineraryDay[]
@@ -78,7 +78,7 @@ model AddOn {
   category      String?  // activities, dining, special
   price         Int      // cents
   description   String?
-  applicableTo  String[] // ['ACTIVE', 'SERENE'] or ['all']
+  applicableTo  String   // JSON: ['ACTIVE', 'SERENE'] or ['all']
 
   @@map("add_ons")
 }
@@ -89,7 +89,7 @@ model BookingRequest {
   journeyTemplateId  String
   startDate          DateTime
   travelers          Int
-  selectedAddOns     String[]         // array of add_on ids
+  selectedAddOns     String           // JSON array of add_on ids
   totalPrice         Int              // cents, calculated
   status             String           @default("pending") // pending, confirmed, cancelled
   specialRequests    String?

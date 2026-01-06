@@ -62,42 +62,42 @@ async function main() {
         category: "activities",
         price: 25000, // $250
         description: "Full-day guided glacier hiking with expert guides",
-        applicableTo: ["ACTIVE", "EXPLORER"],
+        applicableTo: JSON.stringify(["ACTIVE", "EXPLORER"],
       },
       {
         name: "Private Hot Spring Tour",
         category: "activities",
         price: 15000, // $150
         description: "Visit hidden hot springs away from tourist crowds",
-        applicableTo: ["SERENE", "EXPLORER"],
+        applicableTo: JSON.stringify(["SERENE", "EXPLORER"],
       },
       {
         name: "Northern Lights Photography Tour",
         category: "activities",
         price: 30000, // $300
         description: "Professional photography guide for Northern Lights",
-        applicableTo: ["all"],
+        applicableTo: JSON.stringify(["all"],
       },
       {
         name: "Michelin Star Dinner",
         category: "dining",
         price: 20000, // $200
         description: "3-course tasting menu at Reykjavik's finest restaurant",
-        applicableTo: ["all"],
+        applicableTo: JSON.stringify(["all"],
       },
       {
         name: "Helicopter Volcano Tour",
         category: "special",
         price: 50000, // $500
         description: "Private helicopter tour over active volcanic areas",
-        applicableTo: ["ACTIVE", "EXPLORER"],
+        applicableTo: JSON.stringify(["ACTIVE", "EXPLORER"],
       },
       {
         name: "Spa & Wellness Package",
         category: "special",
         price: 18000, // $180
         description: "Full-day spa treatments and thermal bath access",
-        applicableTo: ["SERENE"],
+        applicableTo: JSON.stringify(["SERENE"],
       },
     ],
   });
@@ -112,7 +112,7 @@ async function main() {
       basePrice: 450000, // $4,500
       description:
         "Experience Iceland's raw power through thrilling adventures. From glacier hiking to ice cave exploration, this journey is designed for those who seek adrenaline and unforgettable moments in nature.",
-      highlights: [
+      highlights: JSON.stringify([
         "Glacier hiking on Vatnajökull",
         "Ice cave exploration",
         "Black beach hiking",
@@ -185,7 +185,7 @@ async function main() {
       basePrice: 420000, // $4,200
       description:
         "Find peace in Iceland's tranquil landscapes. This journey focuses on wellness, relaxation, and connecting with nature at a gentle pace. Perfect for those seeking rejuvenation and mindfulness.",
-      highlights: [
+      highlights: JSON.stringify([
         "Private hot spring experiences",
         "Spa treatments",
         "Gentle nature walks",
@@ -258,7 +258,7 @@ async function main() {
       basePrice: 400000, // $4,000
       description:
         "Discover the authentic Iceland beyond tourist trails. This journey combines cultural immersion with natural wonders, featuring local guides, traditional experiences, and hidden gems.",
-      highlights: [
+      highlights: JSON.stringify([
         "Local family visits",
         "Traditional Icelandic cooking",
         "Fishing village tours",
